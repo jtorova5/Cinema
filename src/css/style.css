@@ -24,6 +24,8 @@
     padding: 0px 50px;
     border-radius: 2px;
     height: 80px;
+    position: fixed;
+    width: 100%;
 }
 
 h1 {
@@ -58,3 +60,35 @@ h1:hover {
 .header .nav-links li a:hover {
     color: var(--color-hover);
 }
+
+main {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+#estrenos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 30%;
+    margin: 0% 37.5%;
+}
+
+#estrenos figure {
+    width: 50%;
+}
+
+#estrenos figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#estrenos figure img:hover {
+    transform: scale(1.1);
+}
+
