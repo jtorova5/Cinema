@@ -12,6 +12,7 @@
 :root {
     --color-cinema: #1F537D;
     --color-texto: white;
+    --color-hover: #8DB5C7;
 }
 
 .header {
@@ -22,14 +23,38 @@
     color: var(--color-texto);
     padding: 0px 50px;
     border-radius: 2px;
+    height: 80px;
 }
 
-.nav {
-    display: flex;
-    gap: 20px;
+h1 {
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-.nav a {
+h1:hover {
+    transform: scale(1.2);
+    color: var(--color-hover);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
     color: var(--color-texto);
     text-decoration: none;
+    cursor: pointer;
+}
+
+.header .nav-links li a:hover {
+    color: var(--color-hover);
 }
