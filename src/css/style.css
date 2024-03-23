@@ -1,7 +1,10 @@
 
+/* Importación de "librerias" */
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Rubik+Dirt&display=swap');
 
+/* Variables globales */
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +16,11 @@
     --color-cinema: #1F537D;
     --color-texto: white;
     --color-hover: #8DB5C7;
+    --color-cartelera: #BAC3C7;
+    --transicion-cartelera: #72787a;
 }
+
+/* Barra de navegación */
 
 .header {
     display: flex;
@@ -61,6 +68,8 @@ h1:hover {
     color: var(--color-hover);
 }
 
+/* Estrenos */
+
 main {
     padding-top: 5%;
 }
@@ -99,16 +108,24 @@ main {
     justify-content: space-between;
 }
 
+/* Cartelera */
+
 .container-pelicula {
     margin: 10px;
-    background-color: bisque;
+    background-color: var(--color-cartelera);
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - 20px); 
-    height: 600px;
+    width: calc(20% - 20px); 
+    height: 700px;
     border: 1px solid black;
     overflow: hidden;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    transition: background-color 0.5s;
+}
+
+.container-pelicula:hover {
+    background-color: var(--transicion-cartelera);
+    transform: scale(1.05);
 }
 
 .container-pelicula img {
@@ -126,7 +143,7 @@ main {
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
 
 .container-pelicula p {
@@ -138,8 +155,11 @@ main {
     margin: 0px 20px 20px 20px;
     justify-content: center;
     display: block;
-    margin: 0 auto;
+    margin: 0px auto 0px auto;
+    cursor: pointer;
 }
+
+/* Formulario */
 
 #contacto {
     padding: 50px 0;
@@ -157,20 +177,20 @@ main {
 }
 
 #contacto span {
-    margin-bottom: 30px;
     color: var(--color-cinema);
 }
 
 #contacto form {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    margin-top: 40px;
 }
 
 #contacto input, #contacto textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(black);
+    border: 1px solid ;
     border-radius: 5px;
 }
 
@@ -180,8 +200,7 @@ main {
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 #contacto button:hover {
