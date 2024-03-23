@@ -23,7 +23,7 @@
     color: var(--color-texto);
     padding: 0px 50px;
     border-radius: 2px;
-    height: 80px;
+    height: 50px;
     position: fixed;
     width: 100%;
 }
@@ -62,9 +62,9 @@ h1:hover {
 }
 
 main {
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 5%;
 }
+
 #estrenos {
     display: flex;
     justify-content: center;
@@ -92,3 +92,51 @@ main {
     transform: scale(1.1);
 }
 
+#cartelera {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-pelicula {
+    margin: 10px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 20px); 
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.container-pelicula img {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+}
+
+.container-pelicula figcaption {
+    padding: 0px 20px 20px 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container-pelicula p {
+    padding: 0px 20px 20px 20px;
+}
+
+.container-pelicula button {
+    padding: 0px 20px;
+    margin: 0px 20px 20px 20px;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
