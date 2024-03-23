@@ -140,3 +140,57 @@ main {
     display: block;
     margin: 0 auto;
 }
+
+#contacto {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contacto article {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+    color: var(--color-cinema);
+}
+
+#contacto span {
+    margin-bottom: 30px;
+    color: var(--color-cinema);
+}
+
+#contacto form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(black);
+    border-radius: 5px;
+}
+
+#contacto button {
+    padding: 10px 20px;
+    background-color: var(--color-cinema);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+    background-color: #064172; 
+}
+
+footer {
+    background-color: var(--color-cinema);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
