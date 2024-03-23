@@ -18,6 +18,13 @@
     --color-hover: #8DB5C7;
     --color-cartelera: #BAC3C7;
     --transicion-cartelera: #72787a;
+    --transicion-boton: #064172;
+    --color-bordes: black;
+    --span-form: black;
+    --relieve-contenedores1: #b3b3b3;
+    --relieve-contenedores2: #ffffff;
+    --boton-form: white;
+    --texto-footer: white;
 }
 
 /* Barra de navegación */
@@ -117,10 +124,11 @@ main {
     flex-direction: column;
     width: calc(20% - 20px); 
     height: 700px;
-    border: 1px solid black;
+    border: 1px solid var(--color-bordes);
     overflow: hidden;
     padding-bottom: 20px;
     transition: background-color 0.5s;
+    box-shadow:  5px 5px 5px var(--relieve-contenedores1), -5px -5px 5px var(--relieve-contenedores2);
 }
 
 .container-pelicula:hover {
@@ -177,7 +185,7 @@ main {
 }
 
 #contacto span {
-    color: var(--color-cinema);
+    color: var(--span-form);
 }
 
 #contacto form {
@@ -197,19 +205,19 @@ main {
 #contacto button {
     padding: 10px 20px;
     background-color: var(--color-cinema);
-    color: white;
+    color: var(--boton-form);
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 #contacto button:hover {
-    background-color: #064172; 
+    background-color: var(--transicion-boton); 
 }
 
 footer {
     background-color: var(--color-cinema);
-    color: white;
+    color: var(--texto-footer);
     text-align: center;
     padding: 20px 0;
 }
